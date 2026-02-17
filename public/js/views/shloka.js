@@ -42,6 +42,13 @@ function renderShloka(chapter, verse) {
             <div class="shloka-transliteration">${shloka.transliteration.replace(/\n/g, '<br>')}</div>
         </div>
 
+        <!-- Telugu Pronunciation -->
+        ${shloka.telugu ? `
+        <div class="shloka-section">
+            <div class="shloka-section-title"><span class="icon">🔤</span> Telugu Pronunciation</div>
+            <div class="shloka-telugu-text">${shloka.telugu.replace(/\\n/g, '<br>')}</div>
+        </div>` : ''}
+
         <!-- Word Meanings -->
         ${wordHTML ? `
         <div class="shloka-section">

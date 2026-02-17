@@ -2371,3 +2371,16 @@ img {
     color: var(--text-secondary);
     margin-bottom: var(--space-lg);
 }
+
+/* --- Telugu Pronunciation Styles --- */
+.shloka-telugu-text {
+    font-size: 1.15rem;
+    line-height: 2;
+    color: #f5c842;
+    padding: var(--space-md);
+    background: rgba(245, 200, 66, 0.08);
+    border-radius: var(--radius-md);
+    border-left: 3px solid rgba(245, 200, 66, 0.4);
+    font-family: 'Noto Sans Telugu', 'Gautami', sans-serif;
+    letter-spacing: 0.02em;
+}

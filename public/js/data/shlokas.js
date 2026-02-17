@@ -7,6 +7,7 @@ const SHLOKAS = {
         {
             id: "1.1", chapter: 1, verse: 1,
             sanskrit: "धृतराष्ट्र उवाच\nधर्मक्षेत्रे कुरुक्षेत्रे समवेता युयुत्सवः।\nमामकाः पाण्डवाश्चैव किमकुर्वत सञ्जय॥",
+            telugu: "ధృతరాష్ట్ర ఉవాచ\nధర్మక్షేత్రే కురుక్షేత్రే సమవేతా యుయుత్సవః।\nమామకాః పాణ్డవాశ్చైవ కిమకుర్వత సఞ్జయ॥",
             transliteration: "dhṛtarāśhtra uvācha\ndharma-kṣhetre kuru-kṣhetre samavetā yuyutsavaḥ\nmāmakāḥ pāṇḍavāśhchaiva kim akurvata sañjaya",
             wordMeanings: [
                 { word: "धर्मक्षेत्रे", meaning: "holy field" },
@@ -25,6 +26,7 @@ const SHLOKAS = {
         {
             id: "1.2", chapter: 1, verse: 2,
             sanskrit: "सञ्जय उवाच\nदृष्ट्वा तु पाण्डवानीकं व्यूढं दुर्योधनस्तदा।\nआचार्यमुपसंगम्य राजा वचनमब्रवीत्॥",
+            telugu: "సఞ్జయ ఉవాచ\nదృష్ట్వా తు పాణ్డవానీకం వ్యూఢం దుర్యోధనస్తదా।\nఆచార్యముపసంగమ్య రాజా వచనమబ్రవీత్॥",
             transliteration: "sañjaya uvācha\ndṛṣṭvā tu pāṇḍavānīkaṁ vyūḍhaṁ duryodhanastadā\nāchāryam upasaṅgamya rājā vachanam abravīt",
             wordMeanings: [
                 { word: "दृष्ट्वा", meaning: "seeing" },
@@ -43,6 +45,7 @@ const SHLOKAS = {
         {
             id: "1.3", chapter: 1, verse: 3,
             sanskrit: "पश्यैतां पाण्डुपुत्राणामाचार्य महतीं चमूम्।\nव्यूढां द्रुपदपुत्रेण तव शिष्येण धीमता॥",
+            telugu: "పశ్యైతాం పాణ్డుపుత్రాణామాచార్య మహతీం చమూమ్।\nవ్యూఢాం ద్రుపదపుత్రేణ తవ శిష్యేణ ధీమతా॥",
             transliteration: "paśhyaitāṁ pāṇḍu-putrāṇām āchārya mahatīṁ chamūm\nvyūḍhāṁ drupada-putreṇa tava śhiṣhyeṇa dhīmatā",
             wordMeanings: [
                 { word: "पश्य", meaning: "behold" },
@@ -61,6 +64,7 @@ const SHLOKAS = {
         {
             id: "1.4", chapter: 1, verse: 4,
             sanskrit: "अत्र शूरा महेष्वासा भीमार्जुनसमा युधि।\nयुयुधानो विराटश्च द्रुपदश्च महारथः॥",
+            telugu: "అత్ర శూరా మహేష్వాసా భీమార్జునసమా యుధి।\nయుయుధానో విరాటశ్చ ద్రుపదశ్చ మహారథః॥",
             transliteration: "atra śhūrā maheṣhvāsā bhīmārjuna-samā yudhi\nyuyudhāno virāṭaśhcha drupadaśhcha mahā-rathaḥ",
             wordMeanings: [
                 { word: "शूराः", meaning: "heroes" },
@@ -78,6 +82,7 @@ const SHLOKAS = {
         {
             id: "1.5", chapter: 1, verse: 5,
             sanskrit: "धृष्टकेतुश्चेकितानः काशिराजश्च वीर्यवान्।\nपुरुजित्कुन्तिभोजश्च शैब्यश्च नरपुङ्गवः॥",
+            telugu: "ధృష్టకేతుశ్చేకితానః కాశిరాజశ్చ వీర్యవాన్।\nపురుజిత్కుంతిభోజశ్చ శైబ్యశ్చ నరపుంగవః॥",
             transliteration: "dhṛṣṭaketuśh chekitānaḥ kāśhirājaśh cha vīryavān\npurujit kuntibhojaśh cha śhaibyaśh cha nara-puṅgavaḥ",
             wordMeanings: [
                 { word: "वीर्यवान्", meaning: "valiant" },
@@ -94,6 +99,7 @@ const SHLOKAS = {
         {
             id: "1.6", chapter: 1, verse: 6,
             sanskrit: "युधामन्युश्च विक्रान्त उत्तमौजाश्च वीर्यवान्।\nसौभद्रो द्रौपदेयाश्च सर्व एव महारथाः॥",
+            telugu: "యుధామన్యుశ్చ విక్రాంత ఉత్తమౌజాశ్చ వీర్యవాన్।\nసౌభద్రో ద్రౌపదేయాశ్చ సర్వ ఏవ మహారథాః॥",
             transliteration: "yudhāmanyuśh cha vikrānta uttamaujāśh cha vīryavān\nsaubhadro draupadeyāśhcha sarva eva mahā-rathāḥ",
             wordMeanings: [
                 { word: "विक्रान्तः", meaning: "courageous" },
@@ -111,6 +117,7 @@ const SHLOKAS = {
         {
             id: "1.7", chapter: 1, verse: 7,
             sanskrit: "अस्माकं तु विशिष्टा ये तान्निबोध द्विजोत्तम।\nनायका मम सैन्यस्य संज्ञार्थं तान्ब्रवीमि ते॥",
+            telugu: "అస్మాకం తు విశిష్టా యే తాన్నిబోధ ద్విజోత్తమ।\nనాయకా మమ సైన్యస్య సంజ్ఞార్థం తాన్బ్రవీమి తే॥",
             transliteration: "asmākaṁ tu viśhiṣṭā ye tān nibodha dvijottama\nnāyakā mama sainyasya sanjñārthaṁ tān bravīmi te",
             wordMeanings: [
                 { word: "अस्माकम्", meaning: "our" },
@@ -129,6 +136,7 @@ const SHLOKAS = {
         {
             id: "1.8", chapter: 1, verse: 8,
             sanskrit: "भवान्भीष्मश्च कर्णश्च कृपश्च समितिंजयः।\nअश्वत्थामा विकर्णश्च सौमदत्तिस्तथैव च॥",
+            telugu: "భవాన్భీష్మశ్చ కర్ణశ్చ కృపశ్చ సమితింజయః।\nఅశ్వత్థామా వికర్ణశ్చ సౌమదత్తిస్తథైవ చ॥",
             transliteration: "bhavān bhīṣhmaśhcha karṇaśhcha kṛipaśhcha samitiñjayaḥ\naśhvatthāmā vikarṇaśhcha saumadattis tathaiva cha",
             wordMeanings: [
                 { word: "भवान्", meaning: "yourself" },
@@ -145,6 +153,7 @@ const SHLOKAS = {
         {
             id: "1.9", chapter: 1, verse: 9,
             sanskrit: "अन्ये च बहवः शूरा मदर्थे त्यक्तजीविताः।\nनानाशस्त्रप्रहरणाः सर्वे युद्धविशारदाः॥",
+            telugu: "అన్యే చ బహవః శూరా మదర్థే త్యక్తజీవితాః।\nనానాశస్త్రప్రహరణాః సర్వే యుద్ధవిశారదాః॥",
             transliteration: "anye cha bahavaḥ śhūrā mad-arthe tyakta-jīvitāḥ\nnānā-śhastra-praharaṇāḥ sarve yuddha-viśhāradāḥ",
             wordMeanings: [
                 { word: "बहवः", meaning: "many" },
@@ -163,6 +172,7 @@ const SHLOKAS = {
         {
             id: "1.10", chapter: 1, verse: 10,
             sanskrit: "अपर्याप्तं तदस्माकं बलं भीष्माभिरक्षितम्।\nपर्याप्तं त्विदमेतेषां बलं भीमाभिरक्षितम्॥",
+            telugu: "అపర్యాప్తం తదస్మాకం బలం భీష్మాభిరక్షితమ్।\nపర్యాప్తం త్విదమేతేషాం బలం భీమాభిరక్షితమ్॥",
             transliteration: "aparyāptaṁ tad asmākaṁ balaṁ bhīṣhmābhirakṣhitam\nparyāptaṁ tv idam eteṣhāṁ balaṁ bhīmābhirakṣhitam",
             wordMeanings: [
                 { word: "अपर्याप्तम्", meaning: "unlimited/insufficient" },
@@ -185,6 +195,7 @@ const SHLOKAS = {
         {
             id: "2.1", chapter: 2, verse: 1,
             sanskrit: "सञ्जय उवाच\nतं तथा कृपयाविष्टमश्रुपूर्णाकुलेक्षणम्।\nविषीदन्तमिदं वाक्यमुवाच मधुसूदनः॥",
+            telugu: "సఞ్జయ ఉవాచ\nతం తథా కృపయావిష్టమశ్రుపూర్ణాకులేక్షణమ్।\nవిషీదన్తమిదం వాక్యమువాచ మధుసూదనః॥",
             transliteration: "sañjaya uvācha\ntaṁ tathā kṛipayāviṣhṭam aśhru-pūrṇākulekṣhaṇam\nviṣhīdantam idaṁ vākyam uvācha madhusūdanaḥ",
             wordMeanings: [
                 { word: "कृपया", meaning: "with compassion/pity" },
@@ -203,6 +214,7 @@ const SHLOKAS = {
         {
             id: "2.2", chapter: 2, verse: 2,
             sanskrit: "श्रीभगवानुवाच\nकुतस्त्वा कश्मलमिदं विषमे समुपस्थितम्।\nअनार्यजुष्टमस्वर्ग्यमकीर्तिकरमर्जुन॥",
+            telugu: "శ్రీభగవానువాచ\nకుతస్త్వా కశ్మలమిదం విషమే సముపస్థితమ్।\nఅనార్యజుష్టమస్వర్గ్యమకీర్తికరమర్జున॥",
             transliteration: "śhrī bhagavān uvācha\nkutastvā kaśhmalam idaṁ viṣhame samupasthitam\nanārya-juṣhṭam asvargyam akīrti-karam arjuna",
             wordMeanings: [
                 { word: "कश्मलम्", meaning: "weakness/delusion" },
@@ -221,6 +233,7 @@ const SHLOKAS = {
         {
             id: "2.3", chapter: 2, verse: 3,
             sanskrit: "क्लैब्यं मा स्म गमः पार्थ नैतत्त्वय्युपपद्यते।\nक्षुद्रं हृदयदौर्बल्यं त्यक्त्वोत्तिष्ठ परन्तप॥",
+            telugu: "క్లైబ్యం మా స్మ గమః పార్థ నైతత్త్వయ్యుపపద్యతే।\nక్షుద్రం హృదయదౌర్బల్యం త్యక్త్వోత్తిష్ఠ పరంతప॥",
             transliteration: "klaibyaṁ mā sma gamaḥ pārtha naitat tvayy upapadyate\nkṣhudraṁ hṛidaya-daurbalyaṁ tyaktvottiṣhṭha parantapa",
             wordMeanings: [
                 { word: "क्लैब्यम्", meaning: "weakness" },
@@ -239,6 +252,7 @@ const SHLOKAS = {
         {
             id: "2.7", chapter: 2, verse: 7,
             sanskrit: "कार्पण्यदोषोपहतस्वभावः पृच्छामि त्वां धर्मसम्मूढचेताः।\nयच्छ्रेयः स्यान्निश्चितं ब्रूहि तन्मे शिष्यस्तेऽहं शाधि मां त्वां प्रपन्नम्॥",
+            telugu: "కార్పణ్యదోషోపహతస్వభావః పృచ్ఛామి త్వాం ధర్మసమ్మూఢచేతాః।\nయచ్ఛ్రేయః స్యాన్నిశ్చితం బ్రూహి తన్మే శిష్యస్తేఽహం శాధి మాం త్వాం ప్రపన్నమ్॥",
             transliteration: "kārpaṇya-doṣhopahata-svabhāvaḥ pṛichchhāmi tvāṁ dharma-sammūḍha-chetāḥ\nyach chhreyaḥ syān niśhchitaṁ brūhi tan me śhiṣhyas te 'haṁ śhādhi māṁ tvāṁ prapannam",
             wordMeanings: [
                 { word: "कार्पण्यदोषोपहत", meaning: "afflicted by weakness" },
@@ -258,6 +272,7 @@ const SHLOKAS = {
         {
             id: "2.11", chapter: 2, verse: 11,
             sanskrit: "श्रीभगवानुवाच\nअशोच्यानन्वशोचस्त्वं प्रज्ञावादांश्च भाषसे।\nगतासूनगतासूंश्च नानुशोचन्ति पण्डिताः॥",
+            telugu: "శ్రీభగవానువాచ\nఅశోచ్యానన్వశోచస్త్వం ప్రజ్ఞావాదాంశ్చ భాషసే।\nగతాసూనగతాసూంశ్చ నానుశోచన్తి పణ్డితాః॥",
             transliteration: "śhrī bhagavān uvācha\naśhochyān anvaśhochas tvaṁ prajñā-vādānśh cha bhāṣhase\ngatāsūn agatāsūnśh cha nānuśhochanti paṇḍitāḥ",
             wordMeanings: [
                 { word: "अशोच्यान्", meaning: "not worthy of grief" },
@@ -276,6 +291,7 @@ const SHLOKAS = {
         {
             id: "2.13", chapter: 2, verse: 13,
             sanskrit: "देहिनोऽस्मिन्यथा देहे कौमारं यौवनं जरा।\nतथा देहान्तरप्राप्तिर्धीरस्तत्र न मुह्यति॥",
+            telugu: "దేహినోఽస్మిన్యథా దేహే కౌమారం యౌవనం జరా।\nతథా దేహాన్తరప్రాప్తిర్ధీరస్తత్ర న ముహ్యతి॥",
             transliteration: "dehino 'smin yathā dehe kaumāraṁ yauvanaṁ jarā\ntathā dehāntara-prāptir dhīras tatra na muhyati",
             wordMeanings: [
                 { word: "देहिनः", meaning: "of the soul" },
@@ -296,6 +312,7 @@ const SHLOKAS = {
         {
             id: "2.14", chapter: 2, verse: 14,
             sanskrit: "मात्रास्पर्शास्तु कौन्तेय शीतोष्णसुखदुःखदाः।\nआगमापायिनोऽनित्यास्तांस्तितिक्षस्व भारत॥",
+            telugu: "మాత్రాస్పర్శాస్తు కౌంతేయ శీతోష్ణసుఖదుఃఖదాః।\nఆగమాపాయినోఽనిత్యాస్తాంస్తితిక్షస్వ భారత॥",
             transliteration: "mātrā-sparśhās tu kaunteya śhītoṣhṇa-sukha-duḥkha-dāḥ\nāgamāpāyino 'nityās tāns titikṣhasva bhārata",
             wordMeanings: [
                 { word: "मात्रास्पर्शाः", meaning: "sense perceptions" },
@@ -315,6 +332,7 @@ const SHLOKAS = {
         {
             id: "2.17", chapter: 2, verse: 17,
             sanskrit: "अविनाशि तु तद्विद्धि येन सर्वमिदं ततम्।\nविनाशमव्ययस्यास्य न कश्चित्कर्तुमर्हति॥",
+            telugu: "అవినాశి తు తద్విద్ధి యేన సర్వమిదం తతమ్।\nవినాశమవ్యయస్యాస్య న కశ్చిత్కర్తుమర్హతి॥",
             transliteration: "avināśhi tu tad viddhi yena sarvam idaṁ tatam\nvināśham avyayasyāsya na kaśhchit kartum arhati",
             wordMeanings: [
                 { word: "अविनाशि", meaning: "indestructible" },
@@ -333,6 +351,7 @@ const SHLOKAS = {
         {
             id: "2.20", chapter: 2, verse: 20,
             sanskrit: "न जायते म्रियते वा कदाचिन्नायं भूत्वा भविता वा न भूयः।\nअजो नित्यः शाश्वतोऽयं पुराणो न हन्यते हन्यमाने शरीरे॥",
+            telugu: "న జాయతే మ్రియతే వా కదాచిన్నాయం భూత్వా భవితా వా న భూయః।\nఅజో నిత్యః శాశ్వతోఽయం పురాణో న హన్యతే హన్యమానే శరీరే॥",
             transliteration: "na jāyate mriyate vā kadāchin nāyaṁ bhūtvā bhavitā vā na bhūyaḥ\najo nityaḥ śhāśhvato 'yaṁ purāṇo na hanyate hanyamāne śharīre",
             wordMeanings: [
                 { word: "न जायते", meaning: "is not born" },
@@ -353,6 +372,7 @@ const SHLOKAS = {
         {
             id: "2.22", chapter: 2, verse: 22,
             sanskrit: "वासांसि जीर्णानि यथा विहाय नवानि गृह्णाति नरोऽपराणि।\nतथा शरीराणि विहाय जीर्णान्यन्यानि संयाति नवानि देही॥",
+            telugu: "వాసాంసి జీర్ణాని యథా విహాయ నవాని గృహ్ణాతి నరోఽపరాణి।\nతథా శరీరాణి విహాయ జీర్ణాన్యన్యాని సంయాతి నవాని దేహీ॥",
             transliteration: "vāsānsi jīrṇāni yathā vihāya navāni gṛihṇāti naro 'parāṇi\ntathā śharīrāṇi vihāya jīrṇāny anyāni saṁyāti navāni dehī",
             wordMeanings: [
                 { word: "वासांसि", meaning: "garments" },
@@ -373,6 +393,7 @@ const SHLOKAS = {
         {
             id: "2.47", chapter: 2, verse: 47,
             sanskrit: "कर्मण्येवाधिकारस्ते मा फलेषु कदाचन।\nमा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि॥",
+            telugu: "కర్మణ్యేవాధికారస్తే మా ఫలేషు కదాచన।\nమా కర్మఫలహేతుర్భూర్మా తే సంగోఽస్త్వకర్మణి॥",
             transliteration: "karmaṇy evādhikāras te mā phaleṣhu kadāchana\nmā karma-phala-hetur bhūr mā te saṅgo 'stv akarmaṇi",
             wordMeanings: [
                 { word: "कर्मणि", meaning: "in action" },
@@ -395,6 +416,7 @@ const SHLOKAS = {
         {
             id: "3.1", chapter: 3, verse: 1,
             sanskrit: "अर्जुन उवाच\nज्यायसी चेत्कर्मणस्ते मता बुद्धिर्जनार्दन।\nतत्किं कर्मणि घोरे मां नियोजयसि केशव॥",
+            telugu: "అర్జున ఉవాచ\nజ్యాయసీ చేత్కర్మణస్తే మతా బుద్ధిర్జనార్దన।\nతత్కిం కర్మణి ఘోరే మాం నియోజయసి కేశవ॥",
             transliteration: "arjuna uvācha\njyāyasī chet karmaṇas te matā buddhir janārdana\ntat kiṁ karmaṇi ghore māṁ niyojayasi keśhava",
             wordMeanings: [
                 { word: "ज्यायसी", meaning: "superior" },
@@ -414,6 +436,7 @@ const SHLOKAS = {
         {
             id: "3.5", chapter: 3, verse: 5,
             sanskrit: "न हि कश्चित्क्षणमपि जातु तिष्ठत्यकर्मकृत्।\nकार्यते ह्यवशः कर्म सर्वः प्रकृतिजैर्गुणैः॥",
+            telugu: "న హి కశ్చిత్క్షణమపి జాతు తిష్ఠత్యకర్మకృత్।\nకార్యతే హ్యవశః కర్మ సర్వః ప్రకృతిజైర్గుణైః॥",
             transliteration: "na hi kaśhchit kṣhaṇam api jātu tiṣhṭhaty akarma-kṛit\nkāryate hy avaśhaḥ karma sarvaḥ prakṛiti-jair guṇaiḥ",
             wordMeanings: [
                 { word: "न कश्चित्", meaning: "no one" },
@@ -432,6 +455,7 @@ const SHLOKAS = {
         {
             id: "3.19", chapter: 3, verse: 19,
             sanskrit: "तस्मादसक्तः सततं कार्यं कर्म समाचर।\nअसक्तो ह्याचरन्कर्म परमाप्नोति पूरुषः॥",
+            telugu: "తస్మాదసక్తః సతతం కార్యం కర్మ సమాచర।\nఅసక్తో హ్యాచరన్కర్మ పరమాప్నోతి పూరుషః॥",
             transliteration: "tasmād asaktaḥ satataṁ kāryaṁ karma samāchara\nasakto hy ācharan karma param āpnoti pūruṣhaḥ",
             wordMeanings: [
                 { word: "असक्तः", meaning: "without attachment" },
@@ -451,6 +475,7 @@ const SHLOKAS = {
         {
             id: "3.21", chapter: 3, verse: 21,
             sanskrit: "यद्यदाचरति श्रेष्ठस्तत्तदेवेतरो जनः।\nस यत्प्रमाणं कुरुते लोकस्तदनुवर्तते॥",
+            telugu: "యద్యదాచరతి శ్రేష్ఠస్తత్తదేవేతరో జనః।\nస యత్ప్రమాణం కురుతే లోకస్తదనువర్తతే॥",
             transliteration: "yad yad ācharati śhreṣhṭhas tat tad evetaro janaḥ\nsa yat pramāṇaṁ kurute lokas tad anuvartate",
             wordMeanings: [
                 { word: "श्रेष्ठः", meaning: "a great person" },
@@ -470,6 +495,7 @@ const SHLOKAS = {
         {
             id: "3.27", chapter: 3, verse: 27,
             sanskrit: "प्रकृतेः क्रियमाणानि गुणैः कर्माणि सर्वशः।\nअहंकारविमूढात्मा कर्ताहमिति मन्यते॥",
+            telugu: "ప్రకృతేః క్రియమాణాని గుణైః కర్మాణి సర్వశః।\nఅహంకారవిమూఢాత్మా కర్తాహమితి మన్యతే॥",
             transliteration: "prakṛiteḥ kriyamāṇāni guṇaiḥ karmāṇi sarvaśhaḥ\nahaṅkāra-vimūḍhātmā kartāham iti manyate",
             wordMeanings: [
                 { word: "प्रकृतेः", meaning: "by nature" },
@@ -489,6 +515,7 @@ const SHLOKAS = {
         {
             id: "3.35", chapter: 3, verse: 35,
             sanskrit: "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात्।\nस्वधर्मे निधनं श्रेयः परधर्मो भयावहः॥",
+            telugu: "శ్రేయాన్స్వధర్మో విగుణః పరధర్మాత్స్వనుష్ఠితాత్।\nస్వధర్మే నిధనం శ్రేయః పరధర్మో భయావహః॥",
             transliteration: "śhreyān sva-dharmo viguṇaḥ para-dharmāt sv-anuṣhṭhitāt\nsva-dharme nidhanaṁ śhreyaḥ para-dharmo bhayāvahaḥ",
             wordMeanings: [
                 { word: "श्रेयान्", meaning: "better" },
