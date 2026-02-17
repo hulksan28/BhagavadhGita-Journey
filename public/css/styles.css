@@ -2161,3 +2161,213 @@ img {
         opacity: 0.85;
     }
 }
+
+/* --- Leaderboard Styles --- */
+.podium {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-xl);
+    padding: var(--space-md) 0;
+}
+
+.podium-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--space-lg) var(--space-md);
+    border-radius: var(--radius-xl);
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    min-width: 90px;
+    transition: all var(--transition-base);
+}
+
+.podium-item.gold {
+    border-color: rgba(245, 158, 11, 0.4);
+    background: linear-gradient(135deg, rgba(245, 158, 11, 0.15), rgba(212, 160, 23, 0.08));
+    padding-bottom: var(--space-xl);
+    transform: scale(1.08);
+    box-shadow: 0 0 30px rgba(245, 158, 11, 0.15);
+}
+
+.podium-item.silver {
+    border-color: rgba(148, 163, 184, 0.3);
+    background: linear-gradient(135deg, rgba(148, 163, 184, 0.12), rgba(100, 116, 139, 0.06));
+}
+
+.podium-item.bronze {
+    border-color: rgba(194, 120, 62, 0.3);
+    background: linear-gradient(135deg, rgba(194, 120, 62, 0.12), rgba(161, 95, 40, 0.06));
+}
+
+.podium-item.is-me {
+    box-shadow: 0 0 20px rgba(14, 165, 233, 0.2);
+    border-color: rgba(14, 165, 233, 0.3);
+}
+
+.podium-rank-num {
+    font-family: var(--font-display);
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: var(--space-sm);
+}
+
+.podium-item.gold .podium-rank-num {
+    color: var(--saffron-light);
+}
+
+.podium-item.silver .podium-rank-num {
+    color: #94a3b8;
+}
+
+.podium-item.bronze .podium-rank-num {
+    color: #c2783e;
+}
+
+.podium-avatar {
+    font-size: 36px;
+    margin-bottom: var(--space-sm);
+}
+
+.podium-item.gold .podium-avatar {
+    font-size: 44px;
+}
+
+.podium-name {
+    font-family: var(--font-display);
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 4px;
+    max-width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.podium-xp {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--saffron-light);
+    margin-bottom: 4px;
+}
+
+.podium-stats {
+    display: flex;
+    gap: var(--space-sm);
+    font-size: 11px;
+    color: var(--text-muted);
+}
+
+/* Leaderboard List */
+.lb-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+}
+
+.lb-row {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    padding: var(--space-md) var(--space-lg);
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-lg);
+    transition: all var(--transition-base);
+}
+
+.lb-row:hover {
+    border-color: var(--border-glow);
+}
+
+.lb-row.is-me {
+    border-color: rgba(14, 165, 233, 0.3);
+    background: rgba(14, 165, 233, 0.06);
+}
+
+.lb-rank {
+    width: 32px;
+    font-family: var(--font-display);
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text-muted);
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.lb-avatar-sm {
+    font-size: 24px;
+    flex-shrink: 0;
+}
+
+.lb-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.lb-name {
+    font-size: 14px;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.lb-you {
+    font-size: 11px;
+    color: var(--sky);
+    font-weight: 400;
+}
+
+.lb-rank-title {
+    font-size: 12px;
+    color: var(--text-muted);
+}
+
+.lb-stats-col {
+    text-align: right;
+    flex-shrink: 0;
+}
+
+.lb-xp {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--saffron-light);
+}
+
+.lb-meta {
+    font-size: 11px;
+    color: var(--text-muted);
+    margin-top: 2px;
+}
+
+.loading-dots {
+    color: var(--text-muted);
+    padding: var(--space-xl);
+    font-size: 14px;
+}
+
+.empty-state {
+    text-align: center;
+    padding: var(--space-2xl);
+}
+
+.empty-state-icon {
+    font-size: 48px;
+    margin-bottom: var(--space-md);
+}
+
+.empty-state-title {
+    font-family: var(--font-display);
+    font-size: 18px;
+    margin-bottom: var(--space-sm);
+}
+
+.empty-state-desc {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: var(--space-lg);
+}

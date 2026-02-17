@@ -114,6 +114,10 @@ window.app = {
                 this.currentView = 'profile';
                 renderProfile();
                 break;
+            case 'leaderboard':
+                this.currentView = 'leaderboard';
+                renderLeaderboard();
+                break;
             default:
                 window.location.hash = '#dashboard';
         }
@@ -133,10 +137,11 @@ window.app = {
         const backBtn = document.getElementById('nav-back');
         const title = document.getElementById('nav-title');
 
-        if (view === 'dashboard' || view === 'journey' || view === 'profile') {
+        if (view === 'dashboard' || view === 'journey' || view === 'profile' || view === 'leaderboard') {
             backBtn.classList.add('hidden');
             title.textContent = view === 'dashboard' ? 'Gita Journey' :
-                view === 'journey' ? 'Journey Map' : 'Profile';
+                view === 'journey' ? 'Journey Map' :
+                    view === 'leaderboard' ? 'Leaderboard' : 'Profile';
         } else if (view === 'chapter') {
             backBtn.classList.remove('hidden');
             const ch = CHAPTERS.find(c => c.id === parseInt(params[0]));

@@ -6,6 +6,7 @@ const path = require('path');
 
 const authRoutes = require('./routes/auth');
 const progressRoutes = require('./routes/progress');
+const leaderboardRoutes = require('./routes/leaderboard');
 
 const app = express();
 
@@ -19,6 +20,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 // API Routes
 app.use('/api/auth', authRoutes);
 app.use('/api/progress', progressRoutes);
+app.use('/api/leaderboard', leaderboardRoutes);
 
 // SPA fallback — serve index.html for all non-API routes
 app.get('*', (req, res) => {
