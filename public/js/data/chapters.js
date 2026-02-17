@@ -1,0 +1,222 @@
+// ==========================================
+// CHAPTERS DATA — 18 Chapters of the Bhagavad Gita
+// ==========================================
+
+const CHAPTERS = [
+    {
+        id: 1,
+        name: "Arjuna Vishada Yoga",
+        englishName: "The Yoga of Arjuna's Grief",
+        totalShlokas: 47,
+        theme: "Facing Inner Conflict",
+        icon: "⚔️",
+        color: "#6366f1",
+        description: "On the battlefield of Kurukshetra, Arjuna sees his family and teachers on the opposing side. Overwhelmed by grief and moral confusion, he drops his bow and refuses to fight — a moment we all face when life demands tough choices.",
+        lifePowerUnlocked: "Courage to Face Your Fears",
+        narrative: "The great war is about to begin. Arjuna asks Krishna to drive his chariot between the two armies. What he sees shatters him — grandfathers, teachers, cousins, friends — all ready to die. This is not just a war story. It's every moment you've stood paralyzed before a difficult decision."
+    },
+    {
+        id: 2,
+        name: "Sankhya Yoga",
+        englishName: "The Yoga of Knowledge",
+        totalShlokas: 72,
+        theme: "Understanding the Eternal Self",
+        icon: "🧠",
+        color: "#f59e0b",
+        description: "Krishna begins his teaching by revealing the immortal nature of the soul. He introduces the foundations of wisdom — the difference between the temporary body and the eternal self, and why we must act without being paralyzed by outcomes.",
+        lifePowerUnlocked: "Inner Clarity & Detachment",
+        narrative: "Krishna sees Arjuna weeping and begins the most transformative conversation in history. He doesn't offer sympathy — He offers truth. The body is temporary. The soul is eternal. Your duty matters more than your comfort. This chapter is the backbone of the entire Gita."
+    },
+    {
+        id: 3,
+        name: "Karma Yoga",
+        englishName: "The Yoga of Action",
+        totalShlokas: 43,
+        theme: "The Power of Selfless Action",
+        icon: "🔥",
+        color: "#ea580c",
+        description: "Krishna explains why action is superior to inaction. He teaches the art of performing your duty without attachment to results — the secret to living a fulfilled life without anxiety.",
+        lifePowerUnlocked: "Mastery Over Action & Results",
+        narrative: "Arjuna is confused — if knowledge is superior, why fight? Krishna explains: you cannot escape action. Even breathing is action. The key is HOW you act — selflessly, without obsessing over results. This chapter is a masterclass in productivity and peace."
+    },
+    {
+        id: 4,
+        name: "Jnana Karma Sannyasa Yoga",
+        englishName: "The Yoga of Knowledge & Renunciation of Action",
+        totalShlokas: 42,
+        theme: "Sacred Knowledge",
+        icon: "📜",
+        color: "#7c3aed",
+        description: "Krishna reveals the ancient lineage of this wisdom and explains how knowledge purifies action. He describes His divine appearances across ages and the transformative fire of knowledge.",
+        lifePowerUnlocked: "The Fire of Wisdom",
+        narrative: "Krishna reveals a cosmic secret: He has taught this wisdom before, across many ages. Knowledge is the ultimate purifier — it burns away doubt, ignorance, and confusion like fire burns fuel."
+    },
+    {
+        id: 5,
+        name: "Karma Sannyasa Yoga",
+        englishName: "The Yoga of Renunciation",
+        totalShlokas: 29,
+        theme: "True Renunciation",
+        icon: "🕊️",
+        color: "#10b981",
+        description: "Krishna clarifies that true renunciation is not about abandoning action, but about abandoning attachment. The wise person acts fully while remaining internally free.",
+        lifePowerUnlocked: "Freedom in Action",
+        narrative: "Is it better to renounce action or perform it? Krishna resolves this apparent contradiction: true freedom comes from acting without selfish attachment, not from running away."
+    },
+    {
+        id: 6,
+        name: "Dhyana Yoga",
+        englishName: "The Yoga of Meditation",
+        totalShlokas: 47,
+        theme: "Mastering the Mind",
+        icon: "🧘",
+        color: "#0ea5e9",
+        description: "Krishna teaches the art of meditation — controlling the restless mind, finding inner stillness, and realizing the self. He describes the ideal yogi and assures that no spiritual effort is ever wasted.",
+        lifePowerUnlocked: "Mental Mastery & Focus",
+        narrative: "The mind is restless, powerful, and hard to control — Arjuna admits this. Krishna agrees, but teaches the method: steady practice and detachment. This chapter is the original meditation manual."
+    },
+    {
+        id: 7,
+        name: "Jnana Vijnana Yoga",
+        englishName: "The Yoga of Knowledge & Realization",
+        totalShlokas: 30,
+        theme: "Knowing the Divine",
+        icon: "✨",
+        color: "#ec4899",
+        description: "Krishna reveals His divine nature as the source of all creation. He explains the three qualities of nature (gunas) and why most people remain veiled from the truth.",
+        lifePowerUnlocked: "Seeing the Divine Everywhere",
+        narrative: "Krishna begins revealing His cosmic identity. Everything — water's taste, the sun's light, courage in humans — is a glimpse of the Divine. But Maya keeps most people from seeing it."
+    },
+    {
+        id: 8,
+        name: "Aksara Brahma Yoga",
+        englishName: "The Yoga of the Imperishable Absolute",
+        totalShlokas: 28,
+        theme: "The Eternal Beyond",
+        icon: "🌌",
+        color: "#8b5cf6",
+        description: "Krishna explains the cosmic cycle, the moment of death, and how one's final thoughts determine their next journey. He teaches the path to the eternal, imperishable reality.",
+        lifePowerUnlocked: "Understanding Life & Death",
+        narrative: "What happens when we die? Where does the soul go? Krishna answers these profound questions and teaches that our last thought at death shapes our destiny."
+    },
+    {
+        id: 9,
+        name: "Raja Vidya Raja Guhya Yoga",
+        englishName: "The Yoga of Royal Knowledge",
+        totalShlokas: 34,
+        theme: "The King of Knowledge",
+        icon: "👑",
+        color: "#f59e0b",
+        description: "Krishna shares the supreme secret — the most royal knowledge and the most sacred mystery. He reveals how He pervades everything yet remains unattached, and how simple devotion leads to liberation.",
+        lifePowerUnlocked: "Supreme Devotion",
+        narrative: "This is the king of all knowledge, the deepest of secrets. Krishna explains how even a leaf, a flower, or water offered with love reaches Him. Devotion is the simplest and most powerful path."
+    },
+    {
+        id: 10,
+        name: "Vibhuti Yoga",
+        englishName: "The Yoga of Divine Manifestations",
+        totalShlokas: 42,
+        theme: "Divine Glory",
+        icon: "🌟",
+        color: "#d4a017",
+        description: "Krishna describes His divine manifestations across creation — He is the best, the source, and the essence of everything excellent in the universe. This chapter expands our vision of the Divine.",
+        lifePowerUnlocked: "Recognizing Greatness",
+        narrative: "Among lights, I am the sun. Among waters, the ocean. Among mountains, the Himalayas. Krishna lists His divine expressions to show that everything magnificent is a spark of His infinite glory."
+    },
+    {
+        id: 11,
+        name: "Vishwarupa Darshana Yoga",
+        englishName: "The Yoga of the Cosmic Vision",
+        totalShlokas: 55,
+        theme: "The Universal Form",
+        icon: "🔮",
+        color: "#6366f1",
+        description: "Arjuna requests to see Krishna's cosmic form. What follows is the most dramatic chapter — a terrifying, awe-inspiring vision of the entire universe contained within one being.",
+        lifePowerUnlocked: "Cosmic Perspective",
+        narrative: "Arjuna finally sees it — the entire universe, all beings, all time — within Krishna's cosmic form. It's beautiful, terrifying, and humbling beyond words. This is the Gita's most cinematic moment."
+    },
+    {
+        id: 12,
+        name: "Bhakti Yoga",
+        englishName: "The Yoga of Devotion",
+        totalShlokas: 20,
+        theme: "The Path of Love",
+        icon: "💛",
+        color: "#f43f5e",
+        description: "Krishna describes the qualities of His dearest devotee. This short but powerful chapter reveals that love, devotion, and surrender are the most accessible paths to peace and liberation.",
+        lifePowerUnlocked: "Unconditional Love",
+        narrative: "After the overwhelming cosmic vision, Arjuna asks: what's the best path? Krishna's answer is heartwarming: those who love Me with unwavering devotion are dearest to Me. Simple, pure love is enough."
+    },
+    {
+        id: 13,
+        name: "Kshetra Kshetrajna Vibhaga Yoga",
+        englishName: "The Yoga of the Field and Its Knower",
+        totalShlokas: 35,
+        theme: "Body & Soul",
+        icon: "🪷",
+        color: "#14b8a6",
+        description: "Krishna distinguishes between the body (the field) and the soul (the knower of the field). Understanding this distinction is the key to liberation.",
+        lifePowerUnlocked: "Self-Knowledge",
+        narrative: "Your body is a field. Your consciousness is the farmer. Krishna teaches you to identify with the knower, not the known — with the observer, not the observed."
+    },
+    {
+        id: 14,
+        name: "Gunatraya Vibhaga Yoga",
+        englishName: "The Yoga of the Three Qualities",
+        totalShlokas: 27,
+        theme: "Understanding Nature's Forces",
+        icon: "🌀",
+        color: "#a855f7",
+        description: "Krishna explains the three gunas (qualities of nature) — sattva (goodness), rajas (passion), and tamas (ignorance). Understanding them helps you transcend their binding influence.",
+        lifePowerUnlocked: "Rising Above Nature",
+        narrative: "Why do we sometimes feel lazy, sometimes restless, sometimes peaceful? Krishna reveals the three forces of nature that shape every thought, action, and emotion."
+    },
+    {
+        id: 15,
+        name: "Purushottama Yoga",
+        englishName: "The Yoga of the Supreme Person",
+        totalShlokas: 20,
+        theme: "The Supreme Being",
+        icon: "🌳",
+        color: "#059669",
+        description: "Using the metaphor of an inverted cosmic tree, Krishna describes the nature of existence and reveals Himself as the Supreme Person beyond both the perishable and imperishable.",
+        lifePowerUnlocked: "Ultimate Truth",
+        narrative: "Imagine a cosmic tree with roots above and branches below — this is the world of illusion. Krishna teaches how to cut through it with the axe of detachment to reach the supreme reality."
+    },
+    {
+        id: 16,
+        name: "Daivasura Sampad Vibhaga Yoga",
+        englishName: "The Yoga of Divine & Demonic Qualities",
+        totalShlokas: 24,
+        theme: "Light vs. Darkness",
+        icon: "⚖️",
+        color: "#e11d48",
+        description: "Krishna describes two types of human nature — divine qualities (fearlessness, purity, compassion) and demonic qualities (arrogance, anger, ignorance). Choose wisely which path you walk.",
+        lifePowerUnlocked: "Moral Compass",
+        narrative: "Are you building yourself up or tearing yourself down? Krishna gives a clear checklist of divine and demonic qualities. This chapter is the ultimate personality assessment."
+    },
+    {
+        id: 17,
+        name: "Shraddhatraya Vibhaga Yoga",
+        englishName: "The Yoga of the Three Types of Faith",
+        totalShlokas: 28,
+        theme: "The Power of Faith",
+        icon: "🙏",
+        color: "#7c3aed",
+        description: "Krishna explains how faith shapes everything — what you eat, how you worship, what you give. The three types of faith correspond to the three gunas and determine your life's direction.",
+        lifePowerUnlocked: "Conscious Living",
+        narrative: "You are what you believe. Krishna shows how sattva, rajas, and tamas influence not just your actions but your food, worship, charity, and entire worldview."
+    },
+    {
+        id: 18,
+        name: "Moksha Sannyasa Yoga",
+        englishName: "The Yoga of Liberation through Renunciation",
+        totalShlokas: 78,
+        theme: "The Final Teaching",
+        icon: "🕉️",
+        color: "#f59e0b",
+        description: "The grand finale. Krishna summarizes all teachings, reveals the ultimate secret of surrender, and gives Arjuna the freedom to choose. Arjuna rises, transformed, ready to act.",
+        lifePowerUnlocked: "Complete Freedom & Surrender",
+        narrative: "Everything comes together. Krishna delivers His final, most intimate teaching: surrender completely to Me, and I will free you from all fear. Arjuna's confusion is destroyed. He picks up his bow. The journey is complete."
+    }
+];

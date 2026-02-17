@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Learn the Bhagavad Gita in a fun, interactive and gamified way. 700 shlokas, 18 chapters, one transformative journey.">
+    <title>Gita Journey — Learn the Bhagavad Gita</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="om-symbol">ॐ</div>
+            <h1 class="loading-title">Gita Journey</h1>
+            <p class="loading-subtitle">Preparing your path to wisdom...</p>
+            <div class="loading-bar">
+                <div class="loading-bar-fill"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- XP Notification -->
+    <div id="xp-notification" class="xp-notification hidden">
+        <span class="xp-icon">⚡</span>
+        <span id="xp-amount">+10 XP</span>
+    </div>
+
+    <!-- Level Up Modal -->
+    <div id="level-up-modal" class="modal-overlay hidden">
+        <div class="modal-content level-up-modal">
+            <div class="level-up-glow"></div>
+            <div class="level-up-icon">🏆</div>
+            <h2>Rank Up!</h2>
+            <p id="level-up-rank" class="level-up-rank"></p>
+            <p id="level-up-message" class="level-up-message"></p>
+            <button class="btn btn-primary" onclick="window.app.closeLevelUpModal()">Continue Journey</button>
+        </div>
+    </div>
+
+    <!-- Achievement Toast -->
+    <div id="achievement-toast" class="achievement-toast hidden">
+        <div class="achievement-icon">🎯</div>
+        <div class="achievement-info">
+            <span class="achievement-label">Achievement Unlocked!</span>
+            <span id="achievement-name" class="achievement-name"></span>
+        </div>
+    </div>
+
+    <!-- Main App -->
+    <div id="app" class="app">
+        <!-- Top Navigation -->
+        <header id="top-nav" class="top-nav">
+            <div class="nav-left">
+                <button id="nav-back" class="nav-btn hidden" onclick="history.back()">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 12H5M12 19l-7-7 7-7" />
+                    </svg>
+                </button>
+                <h1 class="nav-title" id="nav-title">Gita Journey</h1>
+            </div>
+            <div class="nav-right">
+                <div class="nav-xp" id="nav-xp">
+                    <span class="xp-badge">⚡</span>
+                    <span id="nav-xp-value">0</span>
+                </div>
+                <div class="nav-streak" id="nav-streak">
+                    <span class="streak-badge">🔥</span>
+                    <span id="nav-streak-value">0</span>
+                </div>
+                <button id="nav-logout" class="nav-btn hidden" onclick="logout()" title="Logout">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4" />
+                        <polyline points="16 17 21 12 16 7" />
+                        <line x1="21" y1="12" x2="9" y2="12" />
+                    </svg>
+                </button>
+            </div>
+        </header>
+
+        <!-- Main Content Area -->
+        <main id="main-content" class="main-content">
+            <!-- Views are rendered here dynamically -->
+        </main>
+
+        <!-- Bottom Navigation -->
+        <nav id="bottom-nav" class="bottom-nav">
+            <a href="#dashboard" class="nav-item active" data-view="dashboard">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+                    <polyline points="9 22 9 12 15 12 15 22" />
+                </svg>
+                <span>Home</span>
+            </a>
+            <a href="#journey" class="nav-item" data-view="journey">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10" />
+                    <path
+                        d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10" />
+                </svg>
+                <span>Journey</span>
+            </a>
+            <a href="#quiz/daily" class="nav-item" data-view="quiz">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 11l3 3L22 4" />
+                    <path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11" />
+                </svg>
+                <span>Quiz</span>
+            </a>
+            <a href="#profile" class="nav-item" data-view="profile">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" />
+                    <circle cx="12" cy="7" r="4" />
+                </svg>
+                <span>Profile</span>
+            </a>
+        </nav>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/data/chapters.js"></script>
+    <script src="js/data/shlokas.js"></script>
+    <script src="js/utils/storage.js"></script>
+    <script src="js/utils/gamification.js"></script>
+    <script src="js/utils/quiz-engine.js"></script>
+    <script src="js/views/dashboard.js"></script>
+    <script src="js/views/journey-map.js"></script>
+    <script src="js/views/chapter.js"></script>
+    <script src="js/views/shloka.js"></script>
+    <script src="js/views/quiz.js"></script>
+    <script src="js/views/profile.js"></script>
+    <script src="js/views/auth.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
